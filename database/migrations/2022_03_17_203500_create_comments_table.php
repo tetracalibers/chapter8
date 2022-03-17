@@ -14,7 +14,6 @@ return new class extends Migration
     public function up()
     {
         Schema::create('comments', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('entry_id', false, true);
             $table->string('name', 85)->nullable();
